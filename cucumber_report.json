@@ -1,0 +1,84 @@
+[
+  {
+    "description": "  Lead is rejected when there is no possibility of contacting the user and getting the missing data. ",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-rejected-without-passing-the-mobile-number",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Should verify the lead is rejected without passing the mobile number",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 334699
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 334699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Post the lead without Mobile number",
+            "match": {
+              "location": "features\\lead.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 957999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 259568300
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"message\": \"'MOBIL E_ NUMBER' must not be empty.\"\n  }",
+                "line": 8
+              }
+            ],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1574900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a scheduler I want to check the Success, Missing data and Rejected leads",
+    "tags": [],
+    "uri": "features\\is_lead_inserted.feature"
+  }
+]
