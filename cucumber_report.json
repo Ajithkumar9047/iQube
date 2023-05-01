@@ -1,20 +1,20 @@
 [
   {
-    "description": "  Lead is rejected when there is no possibility of contacting the user and getting the missing data. ",
+    "description": "",
     "elements": [
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-rejected-without-passing-the-mobile-number",
+        "id": "as-a-scheduler-i-want-to-check-the-auto-refund,-for-invalid-or-missing-parameters;should-verify-the-booking-is-auto-refund-without-passing-the-user-id",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Should verify the lead is rejected without passing the mobile number",
+        "line": 3,
+        "name": "Should verify the booking is auto Refund without passing the user id",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 334699
+              "duration": 352100
             }
           },
           {
@@ -22,51 +22,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 334699
+              "duration": 344200
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
-            "name": "Post the lead without Mobile number",
+            "line": 4,
+            "name": "Post the booking without user id",
             "match": {
-              "location": "features\\lead.js:56"
+              "location": "features\\lead.js:28"
             },
             "result": {
               "status": "passed",
-              "duration": 957999
+              "duration": 959299
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 5,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:61"
+              "location": "features\\lead.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 259568300
+              "duration": 299958800
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"message\": \"'MOBIL E_ NUMBER' must not be empty.\"\n  }",
-                "line": 8
+                "content": "{\n\"response\": \"User Id is required\"\n}",
+                "line": 7
               }
             ],
             "keyword": "Then ",
-            "line": 7,
+            "line": 6,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:65"
+              "location": "features\\lead.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 1574900
+              "duration": 950999
             }
           }
         ],
@@ -74,10 +74,10 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads",
+    "id": "as-a-scheduler-i-want-to-check-the-auto-refund,-for-invalid-or-missing-parameters",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a scheduler I want to check the Success, Missing data and Rejected leads",
+    "name": "As a scheduler I want to check the Auto refund, for invalid or missing parameters",
     "tags": [],
     "uri": "features\\is_lead_inserted.feature"
   }
