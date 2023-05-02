@@ -350,7 +350,7 @@ spec.withJson({ '@DATA:TEMPLATE@': "Order_amt" });
 //     {
 //         Useroffline:
 //         {
-//         "UserId": 1,
+//         "UserId": 11,
 //         "BookingId": 123,
 //         "CancellationId": "1290412904",
 //         "CancellationInitiatedOn": "2023-04-24T00:00:00",
@@ -371,10 +371,38 @@ spec.withJson({ '@DATA:TEMPLATE@': "Order_amt" });
 // )
 // Given('Post the offline booking is true', async function () {
 // spec["POST".toLowerCase()]("/Cancellation");
-// spec.withJson({ '@DATA:TEMPLATE@': "Useroffline" });    
+// spec.withJson({ '@DATA:TEMPLATE@': "Useroffline" });
+// spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 // });
 
-
+pactum.stash.addDataTemplate(
+    {
+        vechicledelivery:
+        {
+        "UserId": 1,
+        "BookingId": 123,
+        "CancellationId": "1290412904",
+        "CancellationInitiatedOn": "2023-04-24T00:00:00",
+        "PaymentID": 23384,
+        "RefTransactionId": "IQ-23656",
+        "TransactionId": "312009438836",
+        "ReasonForCancellation": "ReasonForCancellation test 312009438836",
+        "CustomerRemarks": "CustomerRemarks Test 312009438836",
+        "IsCancellationCompleted": true,
+        "RefundStatus": {
+        "Refund_issue_date": "2023-04-24T00:00:00",
+        "Refund_bank_ref_no": "312009438836",
+        "Refund_amt": 5000.00,
+        "Order_amt": 5000.00
+    }
+    }
+    }
+)
+Given('Post the after Vehicle delivery', async function () {
+spec["POST".toLowerCase()]("/Cancellation");
+spec.withJson({ '@DATA:TEMPLATE@': "vechicledelivery" });
+spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
+});
 
 
 When('I receive a response', async function () {

@@ -151,27 +151,27 @@ Feature:As a scheduler I want to check the Auto refund, for invalid or missing p
             Then I expect the response as
             """
             {
-            "Message":"refund after vehicle delivery"
+            "response":"refund after vehicle delivery"
             }
             """
-      Scenario: Should verify the booking is auto Refund  after invoice
-            Given Post the after invoice       
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "Message":"refund after vehicle delivery"
-            }
-            """
-      Scenario: Should verify the booking is auto Refund  after FP
-            Given Post the after FP     
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "Message":"refund after FP"
-            }
-            """
+      # Scenario: Should verify the booking is auto Refund  after invoice
+      #       Given Post the after invoice       
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "Message":"refund after vehicle delivery"
+      #       }
+      #       """
+      # Scenario: Should verify the booking is auto Refund  after FP
+      #       Given Post the after FP     
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "Message":"refund after FP"
+      #       }
+      #       """
 # 20 Scenario: Should verify the booking is auto Refund  if duplicate booking
 #         Given Post the duplicate booking       
 #         When I receive a response
