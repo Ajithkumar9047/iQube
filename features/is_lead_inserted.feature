@@ -9,24 +9,24 @@ Feature:As a scheduler I want to check the Auto refund, for invalid or missing p
                   "response": "User Id is required"
                   }
                   """
-      # Scenario: Should verify the booking is auto Refund passing invalid user id 
-      #       Given Post the booking with invalid user id
-      #       When I receive a response
-      #             Then I expect the response as
-      #             """
-      #             {
-      #             "response":Booking is not available "
-      #             }
-      #             """
-      # Scenario: Should verify the booking is auto Refund  with Mismatch user id and Booking id
-      #       Given Post the booking without Booking id
-      #       When I receive a response
-      #             Then I expect the response as
-      #             """
-      #             {
-      #             "message":"Booking id is mismatched."
-      #             }
-      #             """
+      Scenario: Should verify the booking is auto Refund passing invalid user id 
+            Given Post the booking with invalid user id
+            When I receive a response
+                  Then I expect the response as
+                  """
+                  {
+                  "response":"Booking not available"
+                  }
+                  """
+      Scenario: Should verify the booking is auto Refund  with Mismatch user id and Booking id
+            Given Post the booking without Booking id
+            When I receive a response
+                  Then I expect the response as
+                  """
+                  {
+                  "message":"Booking id is mismatched."
+                  }
+                  """
       Scenario: Should verify the booking is auto Refund without passing the Transaction id
             Given Post the booking without Transaction id
             When I receive a response
@@ -84,15 +84,15 @@ Feature:As a scheduler I want to check the Auto refund, for invalid or missing p
             "response": "Invalid Refund Details"
             }
             """
-# 11.Scenario: Should verify the booking is auto Refund without passing the Refund status with IsCancellation Completed is True  
-#        Given Post the booking without Refund status with IsCancellation Completed is True
-#        When I receive a response
-#           Then I expect the response as
-#           """
-#           {
-#            “message":"'Refund status' must not be empty."
-#           }
-#           """
+      Scenario: Should verify the booking is auto Refund without passing the Refund status with IsCancellation Completed is True  
+            Given Post the booking without Refund status with IsCancellation Completed is True
+            When I receive a response
+            Then I expect the response as
+            """
+            {
+            "response":"'Refund status' must not be empty."
+            }
+            """
 
       Scenario: Should verify the booking is auto Refund if refund status available but refund  issue date is invalid
             Given Post the booking with invalid refund date
@@ -136,42 +136,43 @@ Feature:As a scheduler I want to check the Auto refund, for invalid or missing p
             }
             """
 
-      # Scenario: Should verify the booking is auto Refund  when offline booking is true
-      #       Given Post the offline booking is true
-      #       When I receive a response
-      #       Then I expect the response as
-      #       """
-      #       {
-      #       "response": "Unable to cancel, This user Offline Booking "
-      #       }
-      #       """
+      Scenario: Should verify the booking is auto Refund  when offline booking is true
+            Given Post the offline booking is true
+            When I receive a response
+            Then I expect the response as
+            """
+            {
+            "response": "Unable to cancel, This user Offline Booking "
+            }
+            """
       Scenario: Should verify the booking is auto Refund  after Vehicle delivery
             Given Post the after Vehicle delivery       
             When I receive a response
             Then I expect the response as
             """
             {
-            "response":"refund after vehicle delivery"
+            "response": "Unable to cancel, Vehicle Delivered details available for this user"
             }
             """
-      # Scenario: Should verify the booking is auto Refund  after invoice
-      #       Given Post the after invoice       
-      #       When I receive a response
-      #       Then I expect the response as
-      #       """
-      #       {
-      #       "Message":"refund after vehicle delivery"
-      #       }
-      #       """
-      # Scenario: Should verify the booking is auto Refund  after FP
-      #       Given Post the after FP     
-      #       When I receive a response
-      #       Then I expect the response as
-      #       """
-      #       {
-      #       "Message":"refund after FP"
-      #       }
-      #       """
+      Scenario: Should verify the booking is auto Refund  after invoice
+            Given Post the after invoice       
+            When I receive a response
+            Then I expect the response as
+            """
+            {
+            "response": "Unable to cancel, Invoice details available for this user"
+            }
+            """
+      Scenario: Should verify the booking is auto Refund  after FullPayment
+            Given Post the after FullPament     
+            When I receive a response
+            Then I expect the response as
+            """
+            {
+            "response": "Unable to cancel, Fullpayment details available for this user"
+            }
+            """
+
 # 20 Scenario: Should verify the booking is auto Refund  if duplicate booking
 #         Given Post the duplicate booking       
 #         When I receive a response
