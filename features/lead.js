@@ -210,7 +210,12 @@ pactum.stash.addDataTemplate(
         "ReasonForCancellation": "ReasonForCancellation test 312009438836",
         "CustomerRemarks": "CustomerRemarks Test 312009438836",
         "IsCancellationCompleted": true,
-        "RefundStatus": null
+        "RefundStatus":  {
+                        "Refund_issue_date": "2023-04-24T00:00:00",
+                        "Refund_bank_ref_no": "09438836",
+                        "Refund_amt": 5000.00,
+                        "Order_amt": 5000.00
+                    }
         }
     }
 )
@@ -220,34 +225,34 @@ spec.withJson({ '@DATA:TEMPLATE@': "IsCancellationCompletedmismatch" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
 
-pactum.stash.addDataTemplate(
-    {
-        RefundStatusmismatch:
-        {
-        "UserId": 6,
-        "BookingId": 123,
-        "CancellationId": "1290412904",
-        "CancellationInitiatedOn": "2023-04-24T00:00:00",
-        "PaymentID": 23384,
-        "RefTransactionId": "IQ-23656",
-        "TransactionId": "312009438836",
-        "ReasonForCancellation": "ReasonForCancellation test 312009438836",
-        "CustomerRemarks": "CustomerRemarks Test 312009438836",
-        "IsCancellationCompleted": true,
-        "RefundStatus": {
-            "Refund_issue_date": "2023-04-24T00:00:00",
-            "Refund_bank_ref_no": "09438836",
-            "Refund_amt": 5000.00,
-            "Order_amt": 5000.00
-        }
-        }
-    }
-)
-Given('Post the booking without Refund status with IsCancellation Completed is True', async function () {
-spec["POST".toLowerCase()]("/Cancellation");
-spec.withJson({ '@DATA:TEMPLATE@': "RefundStatusmismatch" }); 
-spec.withHeaders('token', '205698As3jDKskogPt5ab65360')   
-});
+// pactum.stash.addDataTemplate(
+//     {
+//         RefundStatusmismatch:
+//         {
+//         "UserId": 6,
+//         "BookingId": 123,
+//         "CancellationId": "1290412904",
+//         "CancellationInitiatedOn": "2023-04-24T00:00:00",
+//         "PaymentID": 23384,
+//         "RefTransactionId": "IQ-23656",
+//         "TransactionId": "312009438836",
+//         "ReasonForCancellation": "ReasonForCancellation test 312009438836",
+//         "CustomerRemarks": "CustomerRemarks Test 312009438836",
+//         "IsCancellationCompleted": true,
+//         "RefundStatus": {
+//             "Refund_issue_date": "2023-04-24T00:00:00",
+//             "Refund_bank_ref_no": "09438836",
+//             "Refund_amt": 5000.00,
+//             "Order_amt": 5000.00
+//         }
+//         }
+//     }
+// )
+// Given('Post the booking without Refund status with IsCancellation Completed is True', async function () {
+// spec["POST".toLowerCase()]("/Cancellation");
+// spec.withJson({ '@DATA:TEMPLATE@': "RefundStatusmismatch" }); 
+// spec.withHeaders('token', '205698As3jDKskogPt5ab65360')   
+// });
 pactum.stash.addDataTemplate(
     {
         Refund_issue_date:
@@ -475,6 +480,37 @@ spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "invoice" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
+
+pactum.stash.addDataTemplate(
+    {
+        duplicate_entry:
+        {
+            "UserId":7,
+            "BookingId":123,
+            "CancellationId": "1290412904",
+            "CancellationInitiatedOn": "2023-04-24T00:00:00",
+            "PaymentID": 12765,
+            "RefTransactionId": "IQ-23656",
+            "TransactionId": "312009527901",
+            "ReasonForCancellation": "ReasonForCancellation test 312009527901",
+            "CustomerRemarks": "CustomerRemarks Test 312009527901",
+            "IsCancellationCompleted": true,
+            "RefundStatus": {
+            "Refund_issue_date": "2023-04-24T00:00:00",
+            "Refund_bank_ref_no": "312009438836",
+            "Refund_amt": 5000.00,
+            "Order_amt": 5000.00
+        }
+        }
+    }
+)
+Given("Post when the duplicate booking", async function () {
+spec["POST".toLowerCase()]("/Cancellation");
+spec.withJson({ '@DATA:TEMPLATE@': "duplicate_entry" });
+spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
+});
+
+
 
 When('I receive a response', async function () {
     await spec.toss();
