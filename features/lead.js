@@ -1,7 +1,7 @@
 const pactum = require("pactum")
 const { Before, Given, When, Then } = require("@cucumber/cucumber");
 const post = "POST"
-aji
+
 Before(() => {
     spec = pactum.spec();
 });
