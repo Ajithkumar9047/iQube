@@ -605,7 +605,7 @@ pactum.stash.addDataTemplate(
     {
         withPreLaunchcity:
         {
-            "UserId": 7,
+            "UserId": 1,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
