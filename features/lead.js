@@ -417,7 +417,7 @@ pactum.stash.addDataTemplate(
     {
         vechicledelivery:
         {
-            "UserId": 11,
+            "UserId": 1,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
@@ -447,7 +447,7 @@ pactum.stash.addDataTemplate(
     {
         FullPaymentReceived:
         {
-            "UserId": 12,
+            "UserId": 7,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
@@ -457,13 +457,8 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
-            "RefundDetails": {
-                "RejectionReason": null,
-                "Refund_issue_date": "2023-04-18",
-                "Refund_bank_ref_no": "312009490820",
-                "Refund_amt": 5000.00,
-                "Order_amt": 5000.00
-            }
+            "RefundStatus" : "awaited" ,
+            "RefundDetails":null
         
         }
     }
@@ -786,7 +781,7 @@ pactum.stash.addDataTemplate(
     {
         awaited:
         {
-            "UserId": 14423,
+            "UserId": 6,
             "BookingId": 13017,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
