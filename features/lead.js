@@ -417,7 +417,7 @@ pactum.stash.addDataTemplate(
     {
         vechicledelivery:
         {
-            "UserId": 2,
+            "UserId": 11,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
@@ -447,7 +447,7 @@ pactum.stash.addDataTemplate(
     {
         FullPaymentReceived:
         {
-            "UserId": 2,
+            "UserId": 12,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
@@ -477,7 +477,7 @@ pactum.stash.addDataTemplate(
     {
         invoice:
         {
-            "UserId": 2,
+            "UserId": 13,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
