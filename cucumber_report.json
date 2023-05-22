@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-user-id-is-empty",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-refund-details-is-null-and-launch-city-is-true",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Should verify the cancellation process when the user id is empty",
+        "line": 188,
+        "name": "Should verify the cancellation process when the Refund details is null and Launch city is true",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 352500
+              "duration": 346199
             }
           },
           {
@@ -22,1330 +22,800 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 444000
+              "duration": 341899
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "Post the booking without user id",
-            "match": {
-              "location": "features\\lead.js:29"
-            },
+            "line": 189,
+            "name": "Post the booking without Refund details and Launch city is true",
             "result": {
-              "status": "passed",
-              "duration": 1541299
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
+            "line": 190,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:1059"
+              "location": "features\\lead.js:1061"
             },
             "result": {
-              "status": "passed",
-              "duration": 473956300
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"User Id is required\"\n}",
-                "line": 7
-              }
-            ],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3232100
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the--user-id-is-invalid",
-        "keyword": "Scenario",
-        "line": 12,
-        "name": "Should verify the cancellation process when the  user id is invalid",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 167500
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 161400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 13,
-            "name": "Post the booking with invalid user id",
-            "match": {
-              "location": "features\\lead.js:56"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 725100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 594165500
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Booking not available\"\n}",
-                "line": 16
-              }
-            ],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 309000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the--user-id-and-booking-id-mismatch",
-        "keyword": "Scenario",
-        "line": 21,
-        "name": "Should verify the cancellation process when the  user id and Booking id Mismatch",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 451699
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 128800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 22,
-            "name": "Post the booking without Booking id",
-            "match": {
-              "location": "features\\lead.js:85"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 491500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 23,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 574104099
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Booking not available\"\n}",
-                "line": 25
-              }
-            ],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 325899
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the--transaction-id-is-empty",
-        "keyword": "Scenario",
-        "line": 30,
-        "name": "Should verify the cancellation process when the  Transaction id is empty",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 111199
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 151600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 31,
-            "name": "Post the booking without Transaction id",
-            "match": {
-              "location": "features\\lead.js:111"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 554400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 32,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 646260699
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\":\"Transaction Id is required\"\n}",
-                "line": 34
-              }
-            ],
-            "keyword": "Then ",
-            "line": 33,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 284900
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-the-payment-id-is-empty",
-        "keyword": "Scenario",
-        "line": 39,
-        "name": "Should verify the cancellation process when the the Payment id is empty",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 66299
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 67099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 40,
-            "name": "Post the booking without Payment id",
-            "match": {
-              "location": "features\\lead.js:137"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 832599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 41,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 419392599
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Payment Id is required\"\n}",
-                "line": 43
-              }
-            ],
-            "keyword": "Then ",
-            "line": 42,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 469599
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-cancellationinitiatedon-is-empty",
-        "keyword": "Scenario",
-        "line": 48,
-        "name": "Should verify the cancellation process when the CancellationInitiatedOn is empty",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 159399
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 221599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 49,
-            "name": "Post the booking without CancellationInitiatedOn",
-            "match": {
-              "location": "features\\lead.js:164"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 615499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 50,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 469881299
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Cancellation Initiated On is required\"\n}",
-                "line": 52
-              }
-            ],
-            "keyword": "Then ",
-            "line": 51,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 375800
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-cancellation-id-is-empty",
-        "keyword": "Scenario",
-        "line": 57,
-        "name": "Should verify the cancellation process when the Cancellation id is empty",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 140699
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 135400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 58,
-            "name": "Post the booking without Cancellation id",
-            "match": {
-              "location": "features\\lead.js:191"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 714600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 59,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 446869199
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Cancellation Id is required\"\n}",
-                "line": 61
-              }
-            ],
-            "keyword": "Then ",
-            "line": 60,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 388900
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-reasonforcancellation-is-empty",
-        "keyword": "Scenario",
-        "line": 66,
-        "name": "Should verify the cancellation process when the ReasonForCancellation is empty",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 115400
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 112300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 67,
-            "name": "Post the booking without ReasonForCancellation",
-            "match": {
-              "location": "features\\lead.js:217"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 542599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 68,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 545356499
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Reason For Cancellation is required\"\n}",
-                "line": 70
-              }
-            ],
-            "keyword": "Then ",
-            "line": 69,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 368199
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-cancellation-completed-and-refund-status-is-mismatch",
-        "keyword": "Scenario",
-        "line": 78,
-        "name": "Should verify the cancellation process when the Cancellation completed and Refund status is Mismatch",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 160199
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 612100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 79,
-            "name": "Post the bookingwith Mismatch IsCancellation completed and Refund status",
-            "match": {
-              "location": "features\\lead.js:252"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 622699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 80,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 413909999
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Invalid Refund Status & Refund Details\"\n}",
-                "line": 82
-              }
-            ],
-            "keyword": "Then ",
-            "line": 81,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 372200
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-booking-is-auto-refund-without-passing-the-refund-status-with-iscancellation-completed-is-true",
-        "keyword": "Scenario",
-        "line": 87,
-        "name": "Should verify the booking is auto Refund without passing the Refund status with IsCancellation Completed is True",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 104900
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 173300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 88,
-            "name": "Post the booking without Refund status with IsCancellation Completed is True",
-            "match": {
-              "location": "features\\lead.js:280"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 536999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 89,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 453708699
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"status\": \"Success\"\n}",
-                "line": 91
+                "line": 192
               }
             ],
             "keyword": "Then ",
-            "line": 90,
+            "line": 191,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1063"
+              "location": "features\\lead.js:1065"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-with-refund-details-and-launch-city-is-true",
+        "keyword": "Scenario",
+        "line": 198,
+        "name": "Should verify the cancellation process with Refund details and Launch city is true",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 37800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 199,
+            "name": "Post the booking with Refund details and Launch city is true",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 200,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1061"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 202
+              }
+            ],
+            "keyword": "Then ",
+            "line": 201,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-without-refund-details-and-pre-launch-city-is-true",
+        "keyword": "Scenario",
+        "line": 207,
+        "name": "Should verify the cancellation process without Refund details and Pre Launch city is true",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 28900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 208,
+            "name": "Post the booking without Refund details and Pre Launch city is true",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 209,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1061"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 211
+              }
+            ],
+            "keyword": "Then ",
+            "line": 210,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-with-refund-details-and-pre-launch-city-is-true",
+        "keyword": "Scenario",
+        "line": 216,
+        "name": "Should verify the cancellation process with Refund details and Pre Launch city is true",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 29100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 28200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 217,
+            "name": "Post the booking with Refund details and Pre Launch city is true",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 218,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1061"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 220
+              }
+            ],
+            "keyword": "Then ",
+            "line": 219,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-without-refund-details-and-st-launch-city-is-true",
+        "keyword": "Scenario",
+        "line": 225,
+        "name": "Should verify the cancellation process without Refund details and ST Launch city is true",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 33200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 29399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 226,
+            "name": "Post the booking without Refund details and ST Launch city is true",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 227,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1061"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 229
+              }
+            ],
+            "keyword": "Then ",
+            "line": 228,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-with-refund-details-and-st-launch-city-is-true",
+        "keyword": "Scenario",
+        "line": 234,
+        "name": "Should verify the cancellation process with Refund details and ST Launch city is true",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 125299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 235,
+            "name": "Post the booking with Refund details and ST Launch city is true",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 236,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1061"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 238
+              }
+            ],
+            "keyword": "Then ",
+            "line": 237,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-without-refund-details-and-st-pre-launch-city-is-true",
+        "keyword": "Scenario",
+        "line": 243,
+        "name": "Should verify the cancellation process without Refund details and ST Pre Launch city is true",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 244,
+            "name": "Post the booking without Refund details and ST Pre Launch city is true",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 245,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1061"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 247
+              }
+            ],
+            "keyword": "Then ",
+            "line": 246,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-with-refund-details-and-st-pre-launch-city-is-true",
+        "keyword": "Scenario",
+        "line": 252,
+        "name": "Should verify the cancellation process with Refund details and ST Pre Launch city is true",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19799
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 253,
+            "name": "Post the booking with Refund details and ST Pre Launch city is true",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 254,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1061"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n} ",
+                "line": 256
+              }
+            ],
+            "keyword": "Then ",
+            "line": 255,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-request-with-refund-status-as-awaited",
+        "keyword": "Scenario",
+        "line": 261,
+        "name": "Should verify the Cancellation request with refund status as Awaited",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 95900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 262,
+            "name": "Post the Cancellation request with refund status as Awaited",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 263,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1061"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n} ",
+                "line": 265
+              }
+            ],
+            "keyword": "Then ",
+            "line": 264,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-request-with-refund-status-as-confirmed",
+        "keyword": "Scenario",
+        "line": 270,
+        "name": "Should verify the Cancellation request with refund status as Confirmed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 271,
+            "name": "Post the Cancellation request with refund status as Confirmed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 272,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1061"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n} ",
+                "line": 274
+              }
+            ],
+            "keyword": "Then ",
+            "line": 273,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-request-with-refund-status-as-declined",
+        "keyword": "Scenario",
+        "line": 279,
+        "name": "Should verify the Cancellation request with refund status as Declined",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30699
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 27399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 280,
+            "name": "Post the Cancellation request with refund status as Declined",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 281,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1061"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n} ",
+                "line": 283
+              }
+            ],
+            "keyword": "Then ",
+            "line": 282,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-request-with-refund-status-as-failed",
+        "keyword": "Scenario",
+        "line": 288,
+        "name": "Should verify the Cancellation request with refund status as Failed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 289,
+            "name": "Post the Cancellation request with refund status as Failed",
+            "match": {
+              "location": "features\\lead.js:967"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 917999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 290,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1061"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 530890600
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n} ",
+                "line": 292
+              }
+            ],
+            "keyword": "Then ",
+            "line": 291,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:1065"
             },
             "result": {
               "status": "failed",
-              "duration": 10971199,
-              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1065:29)"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-refund-status-available-but-refund--issue-date-is-invalid",
-        "keyword": "Scenario",
-        "line": 97,
-        "name": "Should verify the cancellation process when the refund status available but refund  issue date is invalid",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 32999
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 22500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 98,
-            "name": "Post the booking with invalid refund date",
-            "match": {
-              "location": "features\\lead.js:313"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 165999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 99,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 537222000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Refund Details not available\"\n}",
-                "line": 101
-              }
-            ],
-            "keyword": "Then ",
-            "line": 100,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 698300
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-refund-status-available-but-refund-_bank_ref_no-invalid",
-        "keyword": "Scenario",
-        "line": 107,
-        "name": "Should verify the cancellation process when the refund status available but Refund _bank_ref_no invalid",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 86999
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 76099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 108,
-            "name": "Post the booking with Refund _bank_ref_no invalid",
-            "match": {
-              "location": "features\\lead.js:347"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 593400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 109,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 543153199
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Refund Details not available\"\n}",
-                "line": 111
-              }
-            ],
-            "keyword": "Then ",
-            "line": 110,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 323099
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-refund-status-available-but-refund--amount-is-invalid",
-        "keyword": "Scenario",
-        "line": 119,
-        "name": "Should verify the cancellation process when the refund status available but refund  amount is invalid",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 107100
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 97500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 120,
-            "name": "Post the booking with invalid refund amount",
-            "match": {
-              "location": "features\\lead.js:382"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 552899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 121,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 556076599
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Refund Details not available\"\n}",
-                "line": 123
-              }
-            ],
-            "keyword": "Then ",
-            "line": 122,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 728700
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-refund-status-available-but-order-amount-is-invalid",
-        "keyword": "Scenario",
-        "line": 129,
-        "name": "Should verify the cancellation process when the refund status available but order amount is invalid",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 87399
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 91900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 130,
-            "name": "Post the booking with invalid order amount",
-            "match": {
-              "location": "features\\lead.js:417"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 517899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 131,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 551137699
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Refund Details not available\"\n}",
-                "line": 133
-              }
-            ],
-            "keyword": "Then ",
-            "line": 132,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 289000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-offline-booking-is-true",
-        "keyword": "Scenario",
-        "line": 139,
-        "name": "Should verify the cancellation process when the offline booking is true",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 87100
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 83400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 140,
-            "name": "Post the offline booking is true",
-            "match": {
-              "location": "features\\lead.js:452"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 508800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 141,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 716384099
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Unable to cancel, This user Offline Booking \"\n}",
-                "line": 143
-              }
-            ],
-            "keyword": "Then ",
-            "line": 142,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 151600
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-after---vehicle-delivery",
-        "keyword": "Scenario",
-        "line": 148,
-        "name": "Should verify the cancellation process after   Vehicle delivery",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 32299
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 24300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 149,
-            "name": "Post the after Vehicle delivery",
-            "match": {
-              "location": "features\\lead.js:486"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 177000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 150,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 720671100
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Unable to cancel, Vehicle Delivered details available for this user\"\n}",
-                "line": 152
-              }
-            ],
-            "keyword": "Then ",
-            "line": 151,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 533699
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process---after-invoice",
-        "keyword": "Scenario",
-        "line": 157,
-        "name": "Should verify the cancellation process   after invoice",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 127299
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 99300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 158,
-            "name": "Post the after invoice",
-            "match": {
-              "location": "features\\lead.js:552"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 652500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 159,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 598588599
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Unable to cancel, Invoice details available for this user\"\n}",
-                "line": 161
-              }
-            ],
-            "keyword": "Then ",
-            "line": 160,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 258700
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process---after-fullpayment",
-        "keyword": "Scenario",
-        "line": 166,
-        "name": "Should verify the cancellation process   after FullPayment",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 71099
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 73699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 167,
-            "name": "Post the after FullPament",
-            "match": {
-              "location": "features\\lead.js:519"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 415700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 168,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 682243999
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\": \"Unable to cancel, Fullpayment details available for this user\"\n}",
-                "line": 170
-              }
-            ],
-            "keyword": "Then ",
-            "line": 169,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 205899
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-duplicate-booking",
-        "keyword": "Scenario",
-        "line": 176,
-        "name": "Should verify the cancellation process when the duplicate booking",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 66900
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 55299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 177,
-            "name": "Post when the duplicate booking",
-            "match": {
-              "location": "features\\lead.js:586"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 362800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 178,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1059"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 658846499
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"response\":\"Booking Already Cancelled\"\n}",
-                "line": 180
-              }
-            ],
-            "keyword": "Then ",
-            "line": 179,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1063"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 690199
+              "duration": 19739399,
+              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1067:29)"
             }
           }
         ],
