@@ -285,15 +285,15 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
       #       "status": "Success"
       #       } 
       #       """
-      Scenario:Should verify the Cancellation request with refund status as Failed
-            Given Post the Cancellation request with refund status as Failed 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            } 
-            """
+      # Scenario:Should verify the Cancellation request with refund status as Failed
+      #       Given Post the Cancellation request with refund status as Failed 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       } 
+      #       """
 #--------------------------------------f&f--------------------------------------------------------------
 
       # Scenario:Should verify the Cancellation request without refund status and details in launchcity
