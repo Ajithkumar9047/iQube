@@ -94,47 +94,47 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
             }
             """
 
-      # Scenario: Should verify the cancellation process when the refund status available but refund  issue date is invalid
-      #       Given Post the booking with invalid refund date
-      #       When I receive a response
-      #       Then I expect the response as
-      #       """
-      #       {
-      #       "response": "Refund Details not available"
-      #       }
-      #       """
+      Scenario: Should verify the cancellation process when the refund status available but refund  issue date is invalid
+            Given Post the booking with invalid refund date
+            When I receive a response
+            Then I expect the response as
+            """
+            {
+            "response": "Refund Details not available"
+            }
+            """
 
-      # Scenario: Should verify the cancellation process when the refund status available but Refund _bank_ref_no invalid
-      #       Given Post the booking with Refund _bank_ref_no invalid
-      #       When I receive a response
-      #       Then I expect the response as
-      #       """
-      #       {
-      #       "response": "Refund Details not available"
-      #       }
-      #       """
+      Scenario: Should verify the cancellation process when the refund status available but Refund _bank_ref_no invalid
+            Given Post the booking with Refund _bank_ref_no invalid
+            When I receive a response
+            Then I expect the response as
+            """
+            {
+            "response": "Refund Details not available"
+            }
+            """
 
 
 
-      # Scenario: Should verify the cancellation process when the refund status available but refund  amount is invalid
-      #       Given Post the booking with invalid refund amount
-      #       When I receive a response
-      #       Then I expect the response as
-      #       """
-      #       {
-      #       "response": "Refund Details not available"
-      #       }
-      #       """
+      Scenario: Should verify the cancellation process when the refund status available but refund  amount is invalid
+            Given Post the booking with invalid refund amount
+            When I receive a response
+            Then I expect the response as
+            """
+            {
+            "response": "Refund Details not available"
+            }
+            """
 
-      # Scenario: Should verify the cancellation process when the refund status available but order amount is invalid
-      #       Given Post the booking with invalid order amount
-      #       When I receive a response
-      #       Then I expect the response as
-      #       """
-      #       {
-      #       "response": "Refund Details not available"
-      #       }
-      #       """
+      Scenario: Should verify the cancellation process when the refund status available but order amount is invalid
+            Given Post the booking with invalid order amount
+            When I receive a response
+            Then I expect the response as
+            """
+            {
+            "response": "Refund Details not available"
+            }
+            """
 
       Scenario: Should verify the cancellation process when the offline booking is true
             Given Post the offline booking is true
@@ -182,6 +182,9 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
             "response":"Booking Already Cancelled"
             }
             """
+
+#-----------------------------------------------------------second report-----------------------------------------------------
+
       # Scenario: Should verify the cancellation process when the Refund details is null and Launch city is true 
       #       Given Post the booking without Refund details and Launch city is true 
       #       When I receive a response
@@ -282,8 +285,37 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
       #       "status": "Success"
       #       } 
       #       """
-      # Scenario:Should verify the Cancellation request with refund status as Failed
-      #       Given Post the Cancellation request with refund status as Failed 
+      Scenario:Should verify the Cancellation request with refund status as Failed
+            Given Post the Cancellation request with refund status as Failed 
+            When I receive a response
+            Then I expect the response as
+            """
+            {
+            "status": "Success"
+            } 
+            """
+#--------------------------------------f&f--------------------------------------------------------------
+
+      # Scenario:Should verify the Cancellation request without refund status and details in launchcity
+      #       Given Post the Cancellation request without refund status and details in launchcity
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       } 
+      #       """
+      # Scenario:Should verify the Cancellation request without refund status and details in Prelaunchcity
+      #       Given Post the Cancellation request without refund status and details in Prelaunchcity 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       } 
+      #       """
+      # Scenario:Should verify the Cancellation request without refund status and details in ST-Prelaunchcity
+      #       Given Post the Cancellation request without refund status and details in ST-Prelaunchcity 
       #       When I receive a response
       #       Then I expect the response as
       #       """
