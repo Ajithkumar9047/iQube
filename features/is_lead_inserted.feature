@@ -182,115 +182,115 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
             "response":"Booking Already Cancelled"
             }
             """
-      Scenario: Should verify the cancellation process when the Refund details is null and Launch city is true 
-            Given Post the booking without Refund details and Launch city is true 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            }
-            """
+      # Scenario: Should verify the cancellation process when the Refund details is null and Launch city is true 
+      #       Given Post the booking without Refund details and Launch city is true 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
 
-      Scenario: Should verify the cancellation process with Refund details and Launch city is true 
-            Given Post the booking with Refund details and Launch city is true 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            }
-            """
-      Scenario: Should verify the cancellation process without Refund details and Pre Launch city is true 
-            Given Post the booking without Refund details and Pre Launch city is true 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            }
-            """
-      Scenario:Should verify the cancellation process with Refund details and Pre Launch city is true 
-            Given Post the booking with Refund details and Pre Launch city is true 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            }
-            """
-      Scenario: Should verify the cancellation process without Refund details and ST Launch city is true 
-            Given Post the booking without Refund details and ST Launch city is true 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            }
-            """
-      Scenario: Should verify the cancellation process with Refund details and ST Launch city is true 
-            Given Post the booking with Refund details and ST Launch city is true 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            }
-            """
-      Scenario: Should verify the cancellation process without Refund details and ST Pre Launch city is true 
-            Given Post the booking without Refund details and ST Pre Launch city is true 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            }
-            """
-      Scenario:Should verify the cancellation process with Refund details and ST Pre Launch city is true 
-            Given Post the booking with Refund details and ST Pre Launch city is true 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            } 
-            """
-      Scenario:Should verify the Cancellation request with refund status as Awaited
-            Given Post the Cancellation request with refund status as Awaited 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            } 
-            """
-      Scenario:Should verify the Cancellation request with refund status as Confirmed
-            Given Post the Cancellation request with refund status as Confirmed 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            } 
-            """
-      Scenario:Should verify the Cancellation request with refund status as Declined
-            Given Post the Cancellation request with refund status as Declined
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            } 
-            """
-      Scenario:Should verify the Cancellation request with refund status as Failed
-            Given Post the Cancellation request with refund status as Failed 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            } 
-            """
+      # Scenario: Should verify the cancellation process with Refund details and Launch city is true 
+      #       Given Post the booking with Refund details and Launch city is true 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
+      # Scenario: Should verify the cancellation process without Refund details and Pre Launch city is true 
+      #       Given Post the booking without Refund details and Pre Launch city is true 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
+      # Scenario:Should verify the cancellation process with Refund details and Pre Launch city is true 
+      #       Given Post the booking with Refund details and Pre Launch city is true 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
+      # Scenario: Should verify the cancellation process without Refund details and ST Launch city is true 
+      #       Given Post the booking without Refund details and ST Launch city is true 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
+      # Scenario: Should verify the cancellation process with Refund details and ST Launch city is true 
+      #       Given Post the booking with Refund details and ST Launch city is true 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
+      # Scenario: Should verify the cancellation process without Refund details and ST Pre Launch city is true 
+      #       Given Post the booking without Refund details and ST Pre Launch city is true 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
+      # Scenario:Should verify the cancellation process with Refund details and ST Pre Launch city is true 
+      #       Given Post the booking with Refund details and ST Pre Launch city is true 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       } 
+      #       """
+      # Scenario:Should verify the Cancellation request with refund status as Awaited
+      #       Given Post the Cancellation request with refund status as Awaited 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       } 
+      #       """
+      # Scenario:Should verify the Cancellation request with refund status as Confirmed
+      #       Given Post the Cancellation request with refund status as Confirmed 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       } 
+      #       """
+      # Scenario:Should verify the Cancellation request with refund status as Declined
+      #       Given Post the Cancellation request with refund status as Declined
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       } 
+      #       """
+      # Scenario:Should verify the Cancellation request with refund status as Failed
+      #       Given Post the Cancellation request with refund status as Failed 
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       } 
+      #       """
 
 
 

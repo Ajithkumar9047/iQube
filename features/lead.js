@@ -21,6 +21,7 @@ pactum.stash.addDataTemplate(
                 "ReasonForCancellation":"Test NGD",
                 "CustomerRemarks": "NGD TEST",
                 "IsCancellationCompleted": true,
+                "RefundStatus" : "awaited",
                 "RefundDetails":null
             }
         }
@@ -47,6 +48,7 @@ pactum.stash.addDataTemplate(
     "ReasonForCancellation":"Test NGD",
     "CustomerRemarks": "NGD TEST",
     "IsCancellationCompleted": true,
+    "RefundStatus" : "awaited",
     "RefundDetails":null
         }
     }
@@ -73,6 +75,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
+            "RefundStatus" : "awaited",
             "RefundDetails":null
         }
     }
@@ -100,6 +103,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
+            "RefundStatus" : "awaited",
             "RefundDetails":null
         }
     }
@@ -125,6 +129,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
+            "RefundStatus" : "awaited",
             "RefundDetails":null
         }
     }
@@ -151,6 +156,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
+            "RefundStatus" : "awaited",
             "RefundDetails":null
         }
     }
@@ -177,6 +183,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
+            "RefundStatus" : "awaited",
             "RefundDetails":null
         }
     }
@@ -202,6 +209,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":null,
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
+            "RefundStatus" : "awaited",
             "RefundDetails":null
         }
     }
@@ -228,6 +236,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": false,
+            "RefundStatus" : "awaited",
             "RefundDetails": {
                 "RejectionReason": null,
                 "Refund_issue_date": "2023-04-18",
@@ -235,6 +244,7 @@ pactum.stash.addDataTemplate(
                 "Refund_amt": 5000.00,
                 "Order_amt": 5000.00
             }
+        
         
         }
     }
@@ -261,6 +271,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
+            "RefundStatus" : "awaited",
             "RefundDetails": {
                 "RejectionReason": null,
                 "Refund_issue_date": "2023-04-18",
@@ -293,6 +304,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
+            "RefundStatus" : "awaited",
             "RefundDetails": {
                 "RejectionReason": null,
                 "Refund_issue_date": "2000-04-18",
@@ -326,6 +338,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
+            "RefundStatus" : "awaited",
             "RefundDetails": {
                 "RejectionReason": null,
                 "Refund_issue_date": "2023-04-18",
@@ -359,6 +372,7 @@ pactum.stash.addDataTemplate(
     "ReasonForCancellation":"Test NGD",
     "CustomerRemarks": "NGD TEST",
     "IsCancellationCompleted": true,
+    "RefundStatus" : "awaited",
     "RefundDetails": {
         "RejectionReason": null,
         "Refund_issue_date": "2023-04-18",
@@ -394,6 +408,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
+            "RefundStatus" : "awaited",
             "RefundDetails": {
                 "RejectionReason": null,
                 "Refund_issue_date": "2023-04-18",
@@ -428,6 +443,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
+            "RefundStatus" : "awaited",
             "RefundDetails": {
                 "RejectionReason": null,
                 "Refund_issue_date": "2023-04-18",
@@ -480,7 +496,7 @@ pactum.stash.addDataTemplate(
     {
         FullPaymentReceived:
         {
-            "UserId": 7,
+            "UserId": 2,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
@@ -860,7 +876,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
-            "RefundStatus" : "awaited" ,
+            "RefundStatus" : "confirmed" ,
             "RefundDetails": {
                 "RejectionReason": null,
                 "Refund_issue_date": "2023-04-18",
@@ -894,7 +910,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
-            "RefundStatus" : "awaited" ,
+            "RefundStatus" : "decline" ,
             "RefundDetails": {
                 "RejectionReason": null,
                 "Refund_issue_date": "2023-04-18",
@@ -927,7 +943,7 @@ pactum.stash.addDataTemplate(
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
-            "RefundStatus" : "awaited" ,
+            "RefundStatus" : "awaited",
             "RefundDetails": {
                 "RejectionReason": null,
                 "Refund_issue_date": "2023-04-18",
