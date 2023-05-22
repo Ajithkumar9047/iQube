@@ -5,6 +5,8 @@ const post = "POST"
 Before(() => {
     spec = pactum.spec();
 });
+
+                                              //cancellation during User id
 pactum.stash.addDataTemplate(
         {
             UserId:
@@ -29,6 +31,8 @@ Given('Post the booking without user id', async function () {
     spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
 
+
+                                                //cancellation during invalid User Id
 pactum.stash.addDataTemplate(
     {
         invalidUserId:
@@ -53,6 +57,8 @@ spec.withJson({ '@DATA:TEMPLATE@': "invalidUserId" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
 
+
+                                                                      //during UserId mismatch
 pactum.stash.addDataTemplate(
     {
         UserIdmismatch:
@@ -79,6 +85,7 @@ spec.withJson({ '@DATA:TEMPLATE@': "UserIdmismatch" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
 
+                                                                     // without  TranscationId
 pactum.stash.addDataTemplate(
     {
         TranscationId:
@@ -103,6 +110,7 @@ spec.withJson({ '@DATA:TEMPLATE@': "TranscationId" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
 
+                                                               // without paymentid
 pactum.stash.addDataTemplate(
     {
         paymentId:
@@ -127,6 +135,8 @@ spec.withJson({ '@DATA:TEMPLATE@': "paymentId" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
 
+
+                                                             //without  CancellationInitiatedOn
 pactum.stash.addDataTemplate(
     {
         CancellationInitiatedOn:
@@ -150,6 +160,9 @@ spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "CancellationInitiatedOn" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
+
+
+                                                         // without CancellationId
 pactum.stash.addDataTemplate(
     {
         CancellationId:
@@ -173,6 +186,8 @@ spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "CancellationId" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
+
+                                                             // without ReasonForCancellation
 pactum.stash.addDataTemplate(
     {
         ReasonForCancellation:
@@ -196,6 +211,9 @@ spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "ReasonForCancellation" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
+
+
+                                                           //without IsCancellationCompletedmismatch
 pactum.stash.addDataTemplate(
     {
         IsCancellationCompletedmismatch:
@@ -227,6 +245,8 @@ spec.withJson({ '@DATA:TEMPLATE@': "IsCancellationCompletedmismatch" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
 
+
+                                                            //without Refund Status mismatch
 pactum.stash.addDataTemplate(
     {
         RefundStatusmismatch:
@@ -258,7 +278,7 @@ spec.withJson({ '@DATA:TEMPLATE@': "RefundStatusmismatch" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')   
 });
 
-
+                                                         // without  Refund_issue_date
 pactum.stash.addDataTemplate(
     {
         Refund_issue_date:
@@ -289,6 +309,9 @@ spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "Refund_issue_date" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
+
+
+                                                                // withount Refund_bank_ref_no
 pactum.stash.addDataTemplate(
     {
         Refund_bank_ref_no:
@@ -319,6 +342,9 @@ spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "Refund_bank_ref_no" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
+
+
+                                                       // without refund amount detail
 pactum.stash.addDataTemplate(
     {
         Refund_amt:
@@ -353,7 +379,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 
 
 
-
+                                                      // cancellation during missing order amount
 pactum.stash.addDataTemplate(
     {
         Order_amt:
@@ -387,7 +413,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 
 
 
-//user is offlinr to cancellation
+                                                                   //user is offlinr to cancellation
 pactum.stash.addDataTemplate(
     {
         Useroffline:
@@ -420,7 +446,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-// cancellation aftre vehicle delivery
+                                                               // cancellation aftre vehicle delivery
 
 pactum.stash.addDataTemplate(
     {
@@ -449,7 +475,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-// cancellation aftre full payment
+                                                                      // cancellation aftre full payment
 pactum.stash.addDataTemplate(
     {
         FullPaymentReceived:
@@ -477,7 +503,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-//cancellation after invoice
+                                                             //cancellation after invoice
 pactum.stash.addDataTemplate(
     {
         invoice:
@@ -505,7 +531,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-// cancellation while duplicate or already cancelled one
+                                                               // cancellation while duplicate or already cancelled one
 pactum.stash.addDataTemplate(
     {
         duplicate_entry:
@@ -539,7 +565,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-// launch city without payment detail
+                                                            // launch city without payment detail
 pactum.stash.addDataTemplate(
     {
         withoutlaunch:
@@ -566,7 +592,7 @@ spec.withJson({ '@DATA:TEMPLATE@': "withoutlaunch" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
 
-//launch city with payment detail
+                                                       //launch city with payment detail
 pactum.stash.addDataTemplate(
     {
         withlaunch:
@@ -600,7 +626,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-//prelaunch city without payment detail
+                                                                      //prelaunch city without payment detail
 pactum.stash.addDataTemplate(
     {
         withoutPreLaunchcity:
@@ -628,7 +654,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-//prelaunch city with payment details
+                                                                       //prelaunch city with payment details
 pactum.stash.addDataTemplate(
     {
         withPreLaunchcity:
@@ -661,7 +687,7 @@ spec.withJson({ '@DATA:TEMPLATE@': "withPreLaunchcity" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
 
-//ST_launch_city without payment details
+                                                                 //ST_launch_city without payment details
 pactum.stash.addDataTemplate(
     {
         withoutSTlaunch:
@@ -689,7 +715,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-//ST_launch city with payment details
+                                                   //ST_launch city with payment details
 pactum.stash.addDataTemplate(
     {
         withSTlaunch:
@@ -723,7 +749,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-//ST_pre_launch city without payment details
+                                              //ST_pre_launch city without payment details
 pactum.stash.addDataTemplate(
     {
         without_ST_PreLaunchcity:
@@ -751,7 +777,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-//ST_pre launch city with payment details
+                                                           //ST_pre launch city with payment details
 pactum.stash.addDataTemplate(
     {
         withST_Pre_Launchcity:
@@ -785,7 +811,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-//cancellation during payment status awaited
+                                                           //cancellation during payment status awaited
 pactum.stash.addDataTemplate(
     {
         awaited:
@@ -819,7 +845,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-//cancellation during payment status confirmed
+                                                               //cancellation during payment status confirmed
 pactum.stash.addDataTemplate(
     {
         Confirmed:
@@ -853,7 +879,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
-//cancellation during payment status declined
+                                                              //cancellation during payment status declined
 pactum.stash.addDataTemplate(
     {
         Declined:
@@ -886,7 +912,7 @@ spec.withJson({ '@DATA:TEMPLATE@': "Declined" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
 
-//cancellation during payment status failed
+                                                        //cancellation during payment status failed
 pactum.stash.addDataTemplate(
     {
         Failed:
