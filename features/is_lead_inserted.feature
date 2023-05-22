@@ -309,7 +309,7 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
       #       Given Post the Cancellation request without refund status and details in Prelaunchcity 
       #       When I receive a response
       #       Then I expect the response as
-      #       """
+      #       """ 
       #       {
       #       "status": "Success"
       #       } 
