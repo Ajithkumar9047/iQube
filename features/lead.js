@@ -66,7 +66,7 @@ pactum.stash.addDataTemplate(
         UserIdmismatch:
         {
             "UserId": 5,
-            "BookingId": 123,
+            "BookingId": 1,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
             "PaymentID"  : 23578,
@@ -261,7 +261,7 @@ pactum.stash.addDataTemplate(
     {
         Refund_details_null:
         {
-            "UserId": 5,
+            "UserId": 7,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
@@ -473,8 +473,13 @@ pactum.stash.addDataTemplate(
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
             "RefundStatus" : "confirmed" ,
-            "RefundDetails":null
-        
+            "RefundDetails": {
+                "RejectionReason": null,
+                "Refund_issue_date": "2023-04-18",
+                "Refund_bank_ref_no": "312009490820",
+                "Refund_amt": 5000.00,
+                "Order_amt": 5000.00
+            }
         }
     }
 )
@@ -501,8 +506,13 @@ pactum.stash.addDataTemplate(
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
             "RefundStatus" : "confirmed" ,
-            "RefundDetails":null
-        
+            "RefundDetails": {
+                "RejectionReason": null,
+                "Refund_issue_date": "2023-04-18",
+                "Refund_bank_ref_no": "312009490820",
+                "Refund_amt": 5000.00,
+                "Order_amt": 5000.00
+            }
         }
     }
 )
@@ -529,8 +539,13 @@ pactum.stash.addDataTemplate(
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
             "RefundStatus" : "confirmed" ,
-            "RefundDetails":null
-        
+            "RefundDetails": {
+                "RejectionReason": null,
+                "Refund_issue_date": "2023-04-18",
+                "Refund_bank_ref_no": "312009490820",
+                "Refund_amt": 5000.00,
+                "Order_amt": 5000.00
+            }
         }
     }
 )
