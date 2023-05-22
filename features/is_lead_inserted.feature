@@ -182,11 +182,20 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
       #       "response":"Booking Already Cancelled"
       #       }
       #       """
+#--------------------------------------------------------second report---------------------------------------------------------
 
-#-----------------------------------------------------------second report-----------------------------------------------------
+      Scenario: Should verify the cancellation process when Post when the without Refund details in Launch city 
+            Given Post when the without Refund details in Launch city   
+                  When I receive a response
+                  Then I expect the response as
+                  """
+                  {
+                  "status": "Success"
+                  }
+                  """
 
-      Scenario: Should verify the cancellation process when the Refund details is null and Launch city is true 
-            Given Post the booking without Refund details and Launch city is true 
+      Scenario: Should verify the cancellation process when the with Refund details in Launch city
+            Given Post when the with Refund details in Launch city 
             When I receive a response
             Then I expect the response as
             """
@@ -194,9 +203,8 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
             "status": "Success"
             }
             """
-
-      Scenario: Should verify the cancellation process with Refund details and Launch city is true 
-            Given Post the booking with Refund details and Launch city is true 
+      Scenario: Should verify the cancellation process during without Refund details in PreLaunch city
+            Given Post when Cancellation during without Refund details in PreLaunchcity 
             When I receive a response
             Then I expect the response as
             """
@@ -204,8 +212,8 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
             "status": "Success"
             }
             """
-      Scenario: Should verify the cancellation process without Refund details and Pre Launch city is true 
-            Given Post the booking without Refund details and Pre Launch city is true 
+      Scenario:Should verify the cancellation process contain Refund details in PreLaunchcity 
+            Given Post of Cancellation process contain Refund details in PreLaunchcity 
             When I receive a response
             Then I expect the response as
             """
@@ -213,8 +221,8 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
             "status": "Success"
             }
             """
-      Scenario:Should verify the cancellation process with Refund details and Pre Launch city is true 
-            Given Post the booking with Refund details and Pre Launch city is true 
+      Scenario: Should verify the cancellation process without Refund details and ST Launch city
+            Given Post without Refund details on ST Launch city  
             When I receive a response
             Then I expect the response as
             """
@@ -222,8 +230,8 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
             "status": "Success"
             }
             """
-      Scenario: Should verify the cancellation process without Refund details and ST Launch city is true 
-            Given Post the booking without Refund details and ST Launch city is true 
+      Scenario: Should verify the cancellation process with Refund details and ST Launch city  
+            Given Post  with Refund details and ST Launch city 
             When I receive a response
             Then I expect the response as
             """
@@ -231,8 +239,8 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
             "status": "Success"
             }
             """
-      Scenario: Should verify the cancellation process with Refund details and ST Launch city is true 
-            Given Post the booking with Refund details and ST Launch city is true 
+      Scenario: Should verify the cancellation process without Refund details and ST Pre Launch city  
+            Given Post the booking without Refund details and ST Pre Launch city 
             When I receive a response
             Then I expect the response as
             """
@@ -240,17 +248,8 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
             "status": "Success"
             }
             """
-      Scenario: Should verify the cancellation process without Refund details and ST Pre Launch city is true 
-            Given Post the booking without Refund details and ST Pre Launch city is true 
-            When I receive a response
-            Then I expect the response as
-            """
-            {
-            "status": "Success"
-            }
-            """
-      Scenario:Should verify the cancellation process with Refund details and ST Pre Launch city is true 
-            Given Post the booking with Refund details and ST Pre Launch city is true 
+      Scenario:Should verify the cancellation process with Refund details and ST Pre Launch city  
+            Given Post the booking with Refund details and ST Pre Launch city 
             When I receive a response
             Then I expect the response as
             """

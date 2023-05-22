@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-refund-details-is-null-and-launch-city-is-true",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-post-when-the-without-refund-details-in-launch-city",
         "keyword": "Scenario",
-        "line": 188,
-        "name": "Should verify the cancellation process when the Refund details is null and Launch city is true",
+        "line": 187,
+        "name": "Should verify the cancellation process when Post when the without Refund details in Launch city",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 346199
+              "duration": 399600
             }
           },
           {
@@ -22,48 +22,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 341899
+              "duration": 365099
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+            "line": 188,
+            "name": "Post when the without Refund details in Launch city",
+            "match": {
+              "location": "features\\lead.js:751"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1341500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 189,
-            "name": "Post the booking without Refund details and Launch city is true",
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 975974400
             }
           },
           {
-            "arguments": [],
-            "keyword": "When ",
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 191
+              }
+            ],
+            "keyword": "Then ",
             "line": 190,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1061"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"status\": \"Success\"\n}",
-                "line": 192
-              }
-            ],
-            "keyword": "Then ",
-            "line": 191,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1065"
+              "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 723800
             }
           }
         ],
@@ -72,17 +75,17 @@
       },
       {
         "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-with-refund-details-and-launch-city-is-true",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-when-the-with-refund-details-in-launch-city",
         "keyword": "Scenario",
-        "line": 198,
-        "name": "Should verify the cancellation process with Refund details and Launch city is true",
+        "line": 197,
+        "name": "Should verify the cancellation process when the with Refund details in Launch city",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37800
+              "duration": 48400
             }
           },
           {
@@ -90,48 +93,52 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 34299
+              "duration": 40899
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+            "line": 198,
+            "name": "Post when the with Refund details in Launch city",
+            "match": {
+              "location": "features\\lead.js:784"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 180400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 199,
-            "name": "Post the booking with Refund details and Launch city is true",
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 451127300
             }
           },
           {
-            "arguments": [],
-            "keyword": "When ",
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 201
+              }
+            ],
+            "keyword": "Then ",
             "line": 200,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1061"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"status\": \"Success\"\n}",
-                "line": 202
-              }
-            ],
-            "keyword": "Then ",
-            "line": 201,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1065"
+              "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 20913499,
+              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1071:29)"
             }
           }
         ],
@@ -140,17 +147,17 @@
       },
       {
         "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-without-refund-details-and-pre-launch-city-is-true",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-during-without-refund-details-in-prelaunch-city",
         "keyword": "Scenario",
-        "line": 207,
-        "name": "Should verify the cancellation process without Refund details and Pre Launch city is true",
+        "line": 206,
+        "name": "Should verify the cancellation process during without Refund details in PreLaunch city",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 32100
+              "duration": 306700
             }
           },
           {
@@ -158,48 +165,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 28900
+              "duration": 93799
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+            "line": 207,
+            "name": "Post when Cancellation during without Refund details in PreLaunchcity",
+            "match": {
+              "location": "features\\lead.js:812"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 416000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 208,
-            "name": "Post the booking without Refund details and Pre Launch city is true",
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 841438899
             }
           },
           {
-            "arguments": [],
-            "keyword": "When ",
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 210
+              }
+            ],
+            "keyword": "Then ",
             "line": 209,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1061"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"status\": \"Success\"\n}",
-                "line": 211
-              }
-            ],
-            "keyword": "Then ",
-            "line": 210,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1065"
+              "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 140400
             }
           }
         ],
@@ -208,17 +218,17 @@
       },
       {
         "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-with-refund-details-and-pre-launch-city-is-true",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-contain-refund-details-in-prelaunchcity",
         "keyword": "Scenario",
-        "line": 216,
-        "name": "Should verify the cancellation process with Refund details and Pre Launch city is true",
+        "line": 215,
+        "name": "Should verify the cancellation process contain Refund details in PreLaunchcity",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 29100
+              "duration": 44400
             }
           },
           {
@@ -226,48 +236,52 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 28200
+              "duration": 55100
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+            "line": 216,
+            "name": "Post of Cancellation process contain Refund details in PreLaunchcity",
+            "match": {
+              "location": "features\\lead.js:846"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 217,
-            "name": "Post the booking with Refund details and Pre Launch city is true",
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 563327899
             }
           },
           {
-            "arguments": [],
-            "keyword": "When ",
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 219
+              }
+            ],
+            "keyword": "Then ",
             "line": 218,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1061"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"status\": \"Success\"\n}",
-                "line": 220
-              }
-            ],
-            "keyword": "Then ",
-            "line": 219,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1065"
+              "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 10441200,
+              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1071:29)"
             }
           }
         ],
@@ -276,17 +290,17 @@
       },
       {
         "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-without-refund-details-and-st-launch-city-is-true",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-without-refund-details-and-st-launch-city",
         "keyword": "Scenario",
-        "line": 225,
-        "name": "Should verify the cancellation process without Refund details and ST Launch city is true",
+        "line": 224,
+        "name": "Should verify the cancellation process without Refund details and ST Launch city",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 33200
+              "duration": 43099
             }
           },
           {
@@ -294,48 +308,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 29399
+              "duration": 61100
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+            "line": 225,
+            "name": "Post without Refund details on ST Launch city",
+            "match": {
+              "location": "features\\lead.js:873"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 496299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 226,
-            "name": "Post the booking without Refund details and ST Launch city is true",
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 786740599
             }
           },
           {
-            "arguments": [],
-            "keyword": "When ",
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 228
+              }
+            ],
+            "keyword": "Then ",
             "line": 227,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1061"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"status\": \"Success\"\n}",
-                "line": 229
-              }
-            ],
-            "keyword": "Then ",
-            "line": 228,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1065"
+              "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 395500
             }
           }
         ],
@@ -344,17 +361,17 @@
       },
       {
         "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-with-refund-details-and-st-launch-city-is-true",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-with-refund-details-and-st-launch-city",
         "keyword": "Scenario",
-        "line": 234,
-        "name": "Should verify the cancellation process with Refund details and ST Launch city is true",
+        "line": 233,
+        "name": "Should verify the cancellation process with Refund details and ST Launch city",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 125299
+              "duration": 152599
             }
           },
           {
@@ -362,48 +379,52 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 39300
+              "duration": 172999
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+            "line": 234,
+            "name": "Post  with Refund details and ST Launch city",
+            "match": {
+              "location": "features\\lead.js:907"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1101300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 235,
-            "name": "Post the booking with Refund details and ST Launch city is true",
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:1065"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 553741199
             }
           },
           {
-            "arguments": [],
-            "keyword": "When ",
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 237
+              }
+            ],
+            "keyword": "Then ",
             "line": 236,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1061"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"status\": \"Success\"\n}",
-                "line": 238
-              }
-            ],
-            "keyword": "Then ",
-            "line": 237,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1065"
+              "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 6725899,
+              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1071:29)"
             }
           }
         ],
@@ -412,17 +433,17 @@
       },
       {
         "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-without-refund-details-and-st-pre-launch-city-is-true",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-without-refund-details-and-st-pre-launch-city",
         "keyword": "Scenario",
-        "line": 243,
-        "name": "Should verify the cancellation process without Refund details and ST Pre Launch city is true",
+        "line": 242,
+        "name": "Should verify the cancellation process without Refund details and ST Pre Launch city",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 41700
+              "duration": 31899
             }
           },
           {
@@ -430,48 +451,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 23400
+              "duration": 24299
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+            "line": 243,
+            "name": "Post the booking without Refund details and ST Pre Launch city",
+            "match": {
+              "location": "features\\lead.js:935"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 150300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 244,
-            "name": "Post the booking without Refund details and ST Pre Launch city is true",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 245,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:1061"
+              "location": "features\\lead.js:1065"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 958843400
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"status\": \"Success\"\n}",
-                "line": 247
+                "line": 246
               }
             ],
             "keyword": "Then ",
-            "line": 246,
+            "line": 245,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1065"
+              "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 321200
             }
           }
         ],
@@ -480,17 +504,17 @@
       },
       {
         "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-with-refund-details-and-st-pre-launch-city-is-true",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-with-refund-details-and-st-pre-launch-city",
         "keyword": "Scenario",
-        "line": 252,
-        "name": "Should verify the cancellation process with Refund details and ST Pre Launch city is true",
+        "line": 251,
+        "name": "Should verify the cancellation process with Refund details and ST Pre Launch city",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 19799
+              "duration": 119899
             }
           },
           {
@@ -498,48 +522,52 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 21300
+              "duration": 95899
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 253,
-            "name": "Post the booking with Refund details and ST Pre Launch city is true",
+            "line": 252,
+            "name": "Post the booking with Refund details and ST Pre Launch city",
+            "match": {
+              "location": "features\\lead.js:969"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 518200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 254,
+            "line": 253,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:1061"
+              "location": "features\\lead.js:1065"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 502462399
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"status\": \"Success\"\n} ",
-                "line": 256
+                "line": 255
               }
             ],
             "keyword": "Then ",
-            "line": 255,
+            "line": 254,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1065"
+              "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 11430799,
+              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1071:29)"
             }
           }
         ],
@@ -550,7 +578,7 @@
         "description": "",
         "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-request-with-refund-status-as-awaited",
         "keyword": "Scenario",
-        "line": 261,
+        "line": 260,
         "name": "Should verify the Cancellation request with refund status as Awaited",
         "steps": [
           {
@@ -558,7 +586,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 41000
+              "duration": 116600
             }
           },
           {
@@ -566,48 +594,52 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 95900
+              "duration": 30900
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 262,
+            "line": 261,
             "name": "Post the Cancellation request with refund status as Awaited",
+            "match": {
+              "location": "features\\lead.js:623"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 175499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 263,
+            "line": 262,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:1061"
+              "location": "features\\lead.js:1065"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 557345900
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"status\": \"Success\"\n} ",
-                "line": 265
+                "line": 264
               }
             ],
             "keyword": "Then ",
-            "line": 264,
+            "line": 263,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1065"
+              "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 11010399,
+              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1071:29)"
             }
           }
         ],
@@ -618,7 +650,7 @@
         "description": "",
         "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-request-with-refund-status-as-confirmed",
         "keyword": "Scenario",
-        "line": 270,
+        "line": 269,
         "name": "Should verify the Cancellation request with refund status as Confirmed",
         "steps": [
           {
@@ -626,7 +658,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 23899
+              "duration": 39600
             }
           },
           {
@@ -634,48 +666,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 55600
+              "duration": 91799
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 271,
+            "line": 270,
             "name": "Post the Cancellation request with refund status as Confirmed",
+            "match": {
+              "location": "features\\lead.js:657"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 222499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 272,
+            "line": 271,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:1061"
+              "location": "features\\lead.js:1065"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 737725800
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"status\": \"Success\"\n} ",
-                "line": 274
+                "line": 273
               }
             ],
             "keyword": "Then ",
-            "line": 273,
+            "line": 272,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1065"
+              "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 176699
             }
           }
         ],
@@ -686,7 +721,7 @@
         "description": "",
         "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-request-with-refund-status-as-declined",
         "keyword": "Scenario",
-        "line": 279,
+        "line": 278,
         "name": "Should verify the Cancellation request with refund status as Declined",
         "steps": [
           {
@@ -694,7 +729,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 30699
+              "duration": 51100
             }
           },
           {
@@ -702,48 +737,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 27399
+              "duration": 44699
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 280,
+            "line": 279,
             "name": "Post the Cancellation request with refund status as Declined",
+            "match": {
+              "location": "features\\lead.js:691"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 321900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 281,
+            "line": 280,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:1061"
+              "location": "features\\lead.js:1065"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 772042199
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"status\": \"Success\"\n} ",
-                "line": 283
+                "line": 282
               }
             ],
             "keyword": "Then ",
-            "line": 282,
+            "line": 281,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1065"
+              "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 720700
             }
           }
         ],
@@ -754,7 +792,7 @@
         "description": "",
         "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-request-with-refund-status-as-failed",
         "keyword": "Scenario",
-        "line": 288,
+        "line": 287,
         "name": "Should verify the Cancellation request with refund status as Failed",
         "steps": [
           {
@@ -762,7 +800,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 23100
+              "duration": 93299
             }
           },
           {
@@ -770,52 +808,52 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 17500
+              "duration": 72999
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 289,
+            "line": 288,
             "name": "Post the Cancellation request with refund status as Failed",
             "match": {
-              "location": "features\\lead.js:967"
+              "location": "features\\lead.js:724"
             },
             "result": {
               "status": "passed",
-              "duration": 917999
+              "duration": 511500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 290,
+            "line": 289,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:1061"
+              "location": "features\\lead.js:1065"
             },
             "result": {
               "status": "passed",
-              "duration": 530890600
+              "duration": 626058200
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"status\": \"Success\"\n} ",
-                "line": 292
+                "line": 291
               }
             ],
             "keyword": "Then ",
-            "line": 291,
+            "line": 290,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:1065"
+              "location": "features\\lead.js:1069"
             },
             "result": {
               "status": "failed",
-              "duration": 19739399,
-              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1067:29)"
+              "duration": 12085899,
+              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1071:29)"
             }
           }
         ],
