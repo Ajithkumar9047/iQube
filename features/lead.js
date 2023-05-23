@@ -15,9 +15,9 @@ pactum.stash.addDataTemplate(
                 "BookingId": 123,
                 "CancellationId" : "1301714423",
                 "CancellationInitiatedOn" : "2023-04-18",
-                "PaymentID"  : 23578,
+                "PaymentID"  : 208,
                 "RefTransactionId":"IQ-10411",
-                "TransactionId": "312009490824", 
+                "TransactionId": "208", 
                 "ReasonForCancellation":"Test NGD",
                 "CustomerRemarks": "NGD TEST",
                 "IsCancellationCompleted": true,
@@ -42,9 +42,9 @@ pactum.stash.addDataTemplate(
     "BookingId": 123,
     "CancellationId" : "1301714423",
     "CancellationInitiatedOn" : "2023-04-18",
-    "PaymentID"  : 23578,
+    "PaymentID"  : 208,
     "RefTransactionId":"IQ-10411",
-    "TransactionId": "312009490824", 
+    "TransactionId": "208", 
     "ReasonForCancellation":"Test NGD",
     "CustomerRemarks": "NGD TEST",
     "IsCancellationCompleted": true,
@@ -69,9 +69,9 @@ pactum.stash.addDataTemplate(
             "BookingId": 1,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -97,7 +97,7 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
             "TransactionId": null, 
             "ReasonForCancellation":"Test NGD",
@@ -125,7 +125,7 @@ pactum.stash.addDataTemplate(
             "CancellationInitiatedOn" : "2023-04-18",
             "PaymentID"  : null,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -150,9 +150,9 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : null,
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -177,9 +177,9 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : null,
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -203,9 +203,9 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":null,
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -230,9 +230,9 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": false,
@@ -259,15 +259,15 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
                                                             //without Refund details with iscompleted is true
 pactum.stash.addDataTemplate(
     {
-        Refund_details_null:
+        with_iscompletion:
         {
             "UserId": 7,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -277,9 +277,9 @@ pactum.stash.addDataTemplate(
         }
     }
 )
-Given('Post the booking without Refund status with IsCancellation Completed is True', async function () {
+Given('Post the booking without Refund status with IsCancellation Completed', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
-spec.withJson({ '@DATA:TEMPLATE@': " Refund_details_null" }); 
+spec.withJson({ '@DATA:TEMPLATE@': "with_iscompletion" }); 
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')   
 });
 
@@ -292,9 +292,9 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -326,9 +326,9 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -360,9 +360,9 @@ pactum.stash.addDataTemplate(
     "BookingId": 123,
     "CancellationId" : "1301714423",
     "CancellationInitiatedOn" : "2023-04-18",
-    "PaymentID"  : 23578,
+    "PaymentID"  : 208,
     "RefTransactionId":"IQ-10411",
-    "TransactionId": "312009490824", 
+    "TransactionId": "208", 
     "ReasonForCancellation":"Test NGD",
     "CustomerRemarks": "NGD TEST",
     "IsCancellationCompleted": true,
@@ -396,9 +396,9 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -422,7 +422,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 
 
 
-                                                                   //user is offlinr to cancellation
+                                                                   //user is offline to cancellation
 pactum.stash.addDataTemplate(
     {
         Useroffline:
@@ -431,9 +431,9 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  :208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -466,17 +466,12 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23579,
+            "PaymentID"  :208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490820", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
-<<<<<<< HEAD
-            "RefundStatus" : "awaited" ,
-            "RefundDetails": null
-        
-=======
             "RefundStatus" : "confirmed" ,
             "RefundDetails": {
                 "RejectionReason": null,
@@ -485,7 +480,6 @@ pactum.stash.addDataTemplate(
                 "Refund_amt": 5000.00,
                 "Order_amt": 5000.00
             }
->>>>>>> 3f475b45eda2ae26dac85b89a9ec533bd23686cf
         }
     }
 )
@@ -505,9 +499,9 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -538,16 +532,13 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
-<<<<<<< HEAD
-=======
             "RefundStatus" : "confirmed" ,
->>>>>>> 3f475b45eda2ae26dac85b89a9ec533bd23686cf
             "RefundDetails": {
                 "RejectionReason": null,
                 "Refund_issue_date": "2023-04-18",
@@ -555,10 +546,6 @@ pactum.stash.addDataTemplate(
                 "Refund_amt": 5000.00,
                 "Order_amt": 5000.00
             }
-<<<<<<< HEAD
-        
-=======
->>>>>>> 3f475b45eda2ae26dac85b89a9ec533bd23686cf
         }
     }
 )
@@ -578,9 +565,9 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23578,
+            "PaymentID"  : 208,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490824", 
+            "TransactionId": "208", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -602,105 +589,7 @@ spec.withJson({ '@DATA:TEMPLATE@': "duplicate_entry" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
 });
 
-<<<<<<< HEAD
-pactum.stash.addDataTemplate(
-    {
-        withoutlaunch:
-        {
-            "UserId": 6,
-            "BookingId": 123,
-            "CancellationId" : "1301714423",
-            "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23572,
-            "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490820", 
-            "ReasonForCancellation":"Test NGD",
-            "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
-            "RefundDetails": {
-                "RejectionReason": null,
-                "Refund_issue_date": "2023-04-18",
-                "Refund_bank_ref_no": "312009490820",
-                "Refund_amt": 5000.00,
-                "Order_amt": 5000.00
-            }
-        
-        }
-    }
-)
-Given("Post the booking without Refund details and Launch city is true ", async function () {
-spec["POST".toLowerCase()]("/Cancellation");
-spec.withJson({ '@DATA:TEMPLATE@': "withoutlaunch" });
-spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
-});
-
-pactum.stash.addDataTemplate(
-    {
-        withlaunch:
-        {
-            "UserId": 6,
-            "BookingId": 123,
-            "CancellationId" : "1301714423",
-            "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23572,
-            "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490820", 
-            "ReasonForCancellation":"Test NGD",
-            "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
-            "RefundDetails": {
-                "RejectionReason": null,
-                "Refund_issue_date": "2023-04-18",
-                "Refund_bank_ref_no": "312009490820",
-                "Refund_amt": 5000.00,
-                "Order_amt": 5000.00
-            }
-        
-        }
-    }
-)
-Given("Post the booking with Refund details and Launch city is true ", async function () {
-spec["POST".toLowerCase()]("/Cancellation");
-spec.withJson({ '@DATA:TEMPLATE@': "withlaunch" });
-spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
-});
-
-pactum.stash.addDataTemplate(
-    {
-        withoutPreLaunchcity:
-        {
-            "UserId": 6,
-            "BookingId": 123,
-            "CancellationId" : "1301714423",
-            "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23572,
-            "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490820", 
-            "ReasonForCancellation":"Test NGD",
-            "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
-            "RefundDetails": {
-                "RejectionReason": null,
-                "Refund_issue_date": "2023-04-18",
-                "Refund_bank_ref_no": "312009490820",
-                "Refund_amt": 5000.00,
-                "Order_amt": 5000.00
-            }
-        
-        } 
-    }
-)
-Given("Post the booking without Refund details and Pre Launch city is true ", async function () {
-spec["POST".toLowerCase()]("/Cancellation");
-spec.withJson({ '@DATA:TEMPLATE@': "withoutPreLaunchcity" });
-spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
-});
-=======
              //---------------------------------------------------------second report------------------------------------------------------------
-
-
->>>>>>> 3f475b45eda2ae26dac85b89a9ec533bd23686cf
-
 
                                                             // launch city without payment detail
 pactum.stash.addDataTemplate(
@@ -954,17 +843,13 @@ pactum.stash.addDataTemplate(
     {
         awaited:
         {
-<<<<<<< HEAD
-            "UserId": 6,
-=======
             "UserId": 1,
->>>>>>> ced0a4938075863f81ae982424f5f55fc09ceedd
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23577,
+            "PaymentID"  : 206,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490823", 
+            "TransactionId": "206", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -996,9 +881,9 @@ pactum.stash.addDataTemplate(
             "BookingId":123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23577,
+            "PaymentID"  :206,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490823", 
+            "TransactionId": "206", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -1030,9 +915,9 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23577,
+            "PaymentID"  :206,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490823", 
+            "TransactionId": "206", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
@@ -1063,15 +948,15 @@ pactum.stash.addDataTemplate(
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 23577,
+            "PaymentID"  :206,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "312009490823", 
+            "TransactionId": "206", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": true,
-            "RefundStatus" : "awaited",
+            "RefundStatus" : "failed",
             "RefundDetails": {
-                "RejectionReason": null,
+                "RejectionReason": "test failed",
                 "Refund_issue_date": "2023-04-18",
                 "Refund_bank_ref_no": "312009490820",
                 "Refund_amt": 5000.00,
@@ -1095,13 +980,13 @@ pactum.stash.addDataTemplate(
     {
         F_Flaunch:
         {
-            "UserId":1 ,
+            "UserId":4 ,
             "BookingId": 123,
             "CancellationId": "1301714423",
             "CancellationInitiatedOn": "2023-04-18T00:00:00",
-            "PaymentID": 23574,
+            "PaymentID": 206,
             "RefTransactionId": "IQ-10411",
-            "TransactionId": "312009490821",
+            "TransactionId": "206",
             "ReasonForCancellation": "Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted":false,
@@ -1123,13 +1008,13 @@ pactum.stash.addDataTemplate(
     {
         F_F_Prelaunch:
         {
-            "UserId":1 ,
+            "UserId":5 ,
             "BookingId": 0,
             "CancellationId": "1301714423",
             "CancellationInitiatedOn": "2023-04-18T00:00:00",
-            "PaymentID": 23574,
+            "PaymentID": 206,
             "RefTransactionId": "IQ-10411",
-            "TransactionId": "312009490821",
+            "TransactionId": "206",
             "ReasonForCancellation": "Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted":false,
@@ -1140,7 +1025,7 @@ pactum.stash.addDataTemplate(
         
     }
 )
-Given("Post the Cancellation request without refund status and details in Prelaunchcity ", async function () {
+Given("Post the Cancellation request without refund status and details in Prelaunchcity", async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "F_F_Prelaunch" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
@@ -1151,13 +1036,13 @@ pactum.stash.addDataTemplate(
     {
         F_F_STPrelaunch:
         {
-            "UserId":1 ,
+            "UserId":6 ,
             "BookingId": 0,
             "CancellationId": "1301714423",
             "CancellationInitiatedOn": "2023-04-18T00:00:00",
-            "PaymentID": 23574,
+            "PaymentID": 206,
             "RefTransactionId": "IQ-10411",
-            "TransactionId": "312009490821",
+            "TransactionId": "206",
             "ReasonForCancellation": "Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted":false,
@@ -1168,7 +1053,7 @@ pactum.stash.addDataTemplate(
         
     }
 )
-Given("Given Post the Cancellation request without refund status and details in ST-Prelaunchcity", async function () {
+Given("Post the Cancellation request without refund status and details in ST-Prelaunchcity", async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "F_F_STPrelaunch" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
