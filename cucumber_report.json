@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 399600
+              "duration": 393199
             }
           },
           {
@@ -22,7 +22,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 365099
+              "duration": 463899
             }
           },
           {
@@ -35,7 +35,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1341500
+              "duration": 992200
             }
           },
           {
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 975974400
+              "duration": 951285699
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 723800
+              "duration": 2917899
             }
           }
         ],
@@ -85,7 +85,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 48400
+              "duration": 143200
             }
           },
           {
@@ -93,7 +93,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 40899
+              "duration": 154199
             }
           },
           {
@@ -106,7 +106,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 180400
+              "duration": 651600
             }
           },
           {
@@ -119,7 +119,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 451127300
+              "duration": 986968799
             }
           },
           {
@@ -136,9 +136,8 @@
               "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "failed",
-              "duration": 20913499,
-              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1071:29)"
+              "status": "passed",
+              "duration": 398800
             }
           }
         ],
@@ -157,7 +156,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 306700
+              "duration": 692600
             }
           },
           {
@@ -165,7 +164,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 93799
+              "duration": 172000
             }
           },
           {
@@ -178,7 +177,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 416000
+              "duration": 698700
             }
           },
           {
@@ -191,7 +190,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 841438899
+              "duration": 902434399
             }
           },
           {
@@ -209,7 +208,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 140400
+              "duration": 326400
             }
           }
         ],
@@ -218,17 +217,17 @@
       },
       {
         "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-contain-refund-details-in-prelaunchcity",
+        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-process-with-refund-details-in-prelaunchcity",
         "keyword": "Scenario",
         "line": 215,
-        "name": "Should verify the cancellation process contain Refund details in PreLaunchcity",
+        "name": "Should verify the cancellation process with Refund details in PreLaunchcity",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 44400
+              "duration": 111799
             }
           },
           {
@@ -236,20 +235,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 55100
+              "duration": 183399
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 216,
-            "name": "Post of Cancellation process contain Refund details in PreLaunchcity",
+            "name": "Post of Cancellation process with Refund details in PreLaunchcity",
             "match": {
               "location": "features\\lead.js:846"
             },
             "result": {
               "status": "passed",
-              "duration": 212900
+              "duration": 542500
             }
           },
           {
@@ -262,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 563327899
+              "duration": 895119899
             }
           },
           {
@@ -279,9 +278,8 @@
               "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "failed",
-              "duration": 10441200,
-              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1071:29)"
+              "status": "passed",
+              "duration": 241000
             }
           }
         ],
@@ -300,7 +298,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 43099
+              "duration": 85399
             }
           },
           {
@@ -308,7 +306,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 61100
+              "duration": 75300
             }
           },
           {
@@ -321,7 +319,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 496299
+              "duration": 875200
             }
           },
           {
@@ -334,7 +332,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 786740599
+              "duration": 957498900
             }
           },
           {
@@ -352,7 +350,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 395500
+              "duration": 565099
             }
           }
         ],
@@ -371,7 +369,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 152599
+              "duration": 228199
             }
           },
           {
@@ -379,7 +377,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 172999
+              "duration": 158499
             }
           },
           {
@@ -392,7 +390,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1101300
+              "duration": 537899
             }
           },
           {
@@ -405,7 +403,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 553741199
+              "duration": 789595799
             }
           },
           {
@@ -422,9 +420,8 @@
               "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "failed",
-              "duration": 6725899,
-              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1071:29)"
+              "status": "passed",
+              "duration": 327600
             }
           }
         ],
@@ -443,7 +440,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 31899
+              "duration": 101800
             }
           },
           {
@@ -451,7 +448,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 24299
+              "duration": 108200
             }
           },
           {
@@ -464,7 +461,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 150300
+              "duration": 593500
             }
           },
           {
@@ -477,7 +474,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 958843400
+              "duration": 778784599
             }
           },
           {
@@ -495,7 +492,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 321200
+              "duration": 339400
             }
           }
         ],
@@ -514,7 +511,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 119899
+              "duration": 103299
             }
           },
           {
@@ -522,7 +519,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 95899
+              "duration": 108500
             }
           },
           {
@@ -535,7 +532,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 518200
+              "duration": 531700
             }
           },
           {
@@ -548,7 +545,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 502462399
+              "duration": 1047283299
             }
           },
           {
@@ -565,295 +562,8 @@
               "location": "features\\lead.js:1069"
             },
             "result": {
-              "status": "failed",
-              "duration": 11430799,
-              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1071:29)"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-request-with-refund-status-as-awaited",
-        "keyword": "Scenario",
-        "line": 260,
-        "name": "Should verify the Cancellation request with refund status as Awaited",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
               "status": "passed",
-              "duration": 116600
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 30900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 261,
-            "name": "Post the Cancellation request with refund status as Awaited",
-            "match": {
-              "location": "features\\lead.js:623"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 175499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 262,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1065"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 557345900
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"status\": \"Success\"\n} ",
-                "line": 264
-              }
-            ],
-            "keyword": "Then ",
-            "line": 263,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1069"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 11010399,
-              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1071:29)"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-request-with-refund-status-as-confirmed",
-        "keyword": "Scenario",
-        "line": 269,
-        "name": "Should verify the Cancellation request with refund status as Confirmed",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 39600
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 91799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 270,
-            "name": "Post the Cancellation request with refund status as Confirmed",
-            "match": {
-              "location": "features\\lead.js:657"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 222499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 271,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1065"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 737725800
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"status\": \"Success\"\n} ",
-                "line": 273
-              }
-            ],
-            "keyword": "Then ",
-            "line": 272,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1069"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 176699
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-request-with-refund-status-as-declined",
-        "keyword": "Scenario",
-        "line": 278,
-        "name": "Should verify the Cancellation request with refund status as Declined",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 51100
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 44699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 279,
-            "name": "Post the Cancellation request with refund status as Declined",
-            "match": {
-              "location": "features\\lead.js:691"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 321900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 280,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1065"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 772042199
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"status\": \"Success\"\n} ",
-                "line": 282
-              }
-            ],
-            "keyword": "Then ",
-            "line": 281,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1069"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 720700
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "as-s-scheduler-i-want-to-check-the-cancellation-process,-so-that-i-can-initiate-the-auto-refund;should-verify-the-cancellation-request-with-refund-status-as-failed",
-        "keyword": "Scenario",
-        "line": 287,
-        "name": "Should verify the Cancellation request with refund status as Failed",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 93299
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 72999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 288,
-            "name": "Post the Cancellation request with refund status as Failed",
-            "match": {
-              "location": "features\\lead.js:724"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 511500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 289,
-            "name": "I receive a response",
-            "match": {
-              "location": "features\\lead.js:1065"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 626058200
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n\"status\": \"Success\"\n} ",
-                "line": 291
-              }
-            ],
-            "keyword": "Then ",
-            "line": 290,
-            "name": "I expect the response as",
-            "match": {
-              "location": "features\\lead.js:1069"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 12085899,
-              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Success' at '$.status' but found 'Validation Failed'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\iQube\\features\\lead.js:1071:29)"
+              "duration": 338400
             }
           }
         ],
