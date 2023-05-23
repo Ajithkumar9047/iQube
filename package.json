@@ -1,11 +1,11 @@
 {
-  "name": "IQUBE_Report",
+  "name": "IQUBE_Report part2 various city with and without refund details",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js",
-    "test1": "cucumber-js features -f json:cucumber_report.json",
+    "test2": "cucumber-js features -f json:cucumber_report.json",
     "report": "node index.js"
   },
   "keywords": [],
